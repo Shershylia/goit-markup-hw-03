@@ -1,0 +1,256 @@
+/** -----------------------------VARIABLES */
+
+:root {
+  /** Fonts */
+  --maint-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /** Colors */
+  --main-cl: #434455;
+  --accent-cl: #4d5ae5;
+  --ocean-cl: #404bbf;
+  --navy-blue-cl: #2e2f42;
+  --green-cl: #31d0aa;
+  --light-slate-cl: #8e8f99;
+  --cornflower-cl: #e7e9fc;
+  --cloud-cl: #f4f4fd;
+  --navy-blue-modal-cl: #2e2f42;
+  --grey-cl: #2e2f42;
+  --white-cl: #ffffff;
+  --dairy-cl: #fcfcfc;
+}
+
+/** -----------------------------BASE STYLES */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-cl);
+  background-color: #fff;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/** ---------------------------COMPONENTS STYLES */
+
+.title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.visually-hidden {
+  margin: -1px;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/** ---------------------------HEADER */
+
+.header-logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-cl);
+  flex: none;
+}
+
+.header-logo-color {
+  color: #2e2f42;
+}
+
+.header-menu-item-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-cl);
+  flex: none;
+}
+
+.header-menu-item-link:hover,
+.header-menu-item-link:focus {
+  color: #404bbf;
+}
+
+.address-menu {
+  font-style: normal;
+}
+
+.address-menu-connect {
+  color: var(--slate, #434455);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-menu-connect:hover,
+.address-menu-connect:focus {
+  color: #404bbf;
+}
+
+/* -------------------------HERO------- */
+.hero {
+  background-color: #2e2f42;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.hero-btn {
+  font-family: var(--maint-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  flex: none;
+  background-color: var(--accent-cl);
+  cursor: pointer;
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: #404bbf;
+}
+
+/* -------------------------ADVANTAGES-------*/
+
+.advantages-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  flex: none;
+}
+
+.advantages-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  flex: none;
+}
+
+/* -------------------------DOING-------*/
+.doing {
+  
+}
+
+/* -------------------------TEAM-------*/
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-item {
+  background-color: var(--white-cl);
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  flex: none;
+}
+
+.team-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #434455;
+  flex: none;
+}
+
+/* -------------------------FOOTER-------*/
+
+.footer {
+  background-color: var(--navyblue, #2e2f42);
+}
+
+.footer-logo {
+  color: var(--accent-cl);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-logo-color {
+  color: var(--cloud, #f4f4fd);
+  font-family: var(--secondary-font);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+/* --------PORTFOLIO-------------------------------- */
+
+.offers-btn {
+  font-family: var(--maint-font);
+  color: var(--accent-cl);
+  background-color: var(--cloud-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  flex: none;
+  cursor: pointer;
+}
+.offers-btn:hover,
+.offers-btn:focus {
+  background: #404bbf;
+  color: #ffffff;
+}
+
+.offers-list {
+}
+
+.offers-subtitle {
+  color: var(--navyblue, #2e2f42);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.offers-text {
+  color: var(--slate, #434455);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
