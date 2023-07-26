@@ -104,6 +104,7 @@ ol {
   flex: none;
   display: flex;
   align-items: center;
+  margin-right: 76px;
 }
 
 .header-logo-color {
@@ -121,7 +122,7 @@ ol {
 
 .header-navigation {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .header-menu-item-link {
@@ -131,6 +132,7 @@ ol {
   letter-spacing: 0.02em;
   color: var(--navy-blue-cl);
   flex: none;
+  padding: 24px 0;
 }
 
 .header-menu-item-link:hover,
@@ -191,7 +193,7 @@ ol {
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -207,7 +209,7 @@ ol {
 /* -------------------------ADVANTAGES-------*/
 
 .advantages {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 
@@ -259,6 +261,7 @@ ol {
 
 .doing-img {
   border: 1px solid var(--cornflower, #e7e9fc);
+  display: block;
 }
 
 /* -------------------------TEAM-------*/
@@ -286,12 +289,15 @@ ol {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
 }
 
 .team-img {
-  margin-bottom: 32px;
+  display: block;
 }
+
+ .team-text-card {
+  padding: 32px 0;
+ }
 
 .team-subtitle {
   font-weight: 500;
@@ -329,6 +335,8 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -341,25 +349,24 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 }
 
 /* --------PORTFOLIO-------------------------------- */
 
 .offers {
-  margin-top: 96px;
-  margin-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .btn-list {
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .offers-container {
-  padding-bottom: 72px;
 }
 
 .offers-btn {
@@ -373,33 +380,39 @@ ol {
   letter-spacing: 0.04em;
   flex: none;
   cursor: pointer;
-  padding: 14px 40px;
+  padding: 12px 24px;
   border-radius: 4px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    border: none;
+    border: 1px solid var(--cornflower, #E7E9FC);
 }
 
 .offers-btn:hover,
 .offers-btn:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .offers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.offers-img {
+  display: block;
 }
 
 .offers-item {
   width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    border-left: 1px solid var(--cornflower, #E7E9FC);
-    border-right: 1px solid var(--cornflower, #E7E9FC);
     background: var(--white, #FFF);
 }
 
 .offers-text-border {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower, #E7E9FC);
+  border-top: none;
 }
 
 .offers-subtitle {
@@ -408,9 +421,7 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
 }
 
 .offers-text {
@@ -418,6 +429,4 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-left: 16px;
-  margin-bottom: 32px;
 }
